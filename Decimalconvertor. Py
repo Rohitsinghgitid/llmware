@@ -1,0 +1,16 @@
+# Taking decimal input from the user
+decimal = int(input("Enter a decimal number: "))
+
+# Convert decimal to binary
+binary = bin(decimal)[2:]  # [2:] removes the '0b' prefix
+
+# Convert decimal to hexadecimal
+hexadecimal = hex(decimal)[2:]  # [2:] removes the '0x' prefix
+
+# Convert decimal to octal
+octal = oct(decimal)[2:]  # [2:] removes the '0o' prefix
+
+# Display the results
+print(f"Binary: {binary}")
+print(f"Hexadecimal: {hexadecimal}")
+print(f"Octal: {octal}")
